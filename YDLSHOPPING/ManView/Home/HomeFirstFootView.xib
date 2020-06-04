@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is the bottom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xj-2Q-O2j">
+                    <rect key="frame" x="110.5" y="18" width="99.5" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLO-NZ-7dS">
+                    <rect key="frame" x="20" y="25" width="82.5" height="0.5"/>
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="tjW-Md-bgL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KxF-WX-Drq">
+                    <rect key="frame" x="218" y="25" width="82" height="0.5"/>
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="EfL-Ah-rTP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="5Xj-2Q-O2j" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="5Ub-Pp-MG9"/>
+                <constraint firstItem="KxF-WX-Drq" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="Pd7-C3-MOt"/>
+                <constraint firstItem="5Xj-2Q-O2j" firstAttribute="leading" secondItem="RLO-NZ-7dS" secondAttribute="trailing" constant="8" id="Pk0-OF-U50"/>
+                <constraint firstItem="RLO-NZ-7dS" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="jdg-JX-rBq"/>
+                <constraint firstItem="RLO-NZ-7dS" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="oT1-4H-O3f"/>
+                <constraint firstAttribute="trailing" secondItem="KxF-WX-Drq" secondAttribute="trailing" constant="20" id="sMq-oI-1Ny"/>
+                <constraint firstItem="KxF-WX-Drq" firstAttribute="leading" secondItem="5Xj-2Q-O2j" secondAttribute="trailing" constant="8" id="svb-KV-EOO"/>
+                <constraint firstItem="5Xj-2Q-O2j" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="x3l-xn-ZuN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9Gg-ye-v9C"/>
+            <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
+        </collectionReusableView>
+    </objects>
+</document>

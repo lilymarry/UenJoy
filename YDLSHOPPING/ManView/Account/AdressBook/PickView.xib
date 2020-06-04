@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickView">
+            <connections>
+                <outlet property="pickView" destination="iN0-rX-Xnp" id="Uq8-Jv-rXb"/>
+                <outlet property="thisView" destination="i5M-Pr-FkT" id="zwL-dI-hFh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atT-S8-7Ow">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="casellView:" destination="-1" eventType="touchUpInside" id="Xn2-XM-zSs"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xL-Ln-sr5">
+                    <rect key="frame" x="0.0" y="666" width="414" height="230"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-rX-Xnp">
+                            <rect key="frame" x="0.0" y="44" width="414" height="186"/>
+                        </pickerView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XK5-nb-WPr">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtL-TU-5h5">
+                                    <rect key="frame" x="347" y="4" width="60" height="40"/>
+                                    <color key="backgroundColor" red="0.96470588239999999" green="0.66666666669999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="YOD-KM-oqs"/>
+                                        <constraint firstAttribute="width" constant="60" id="gNa-Ll-1cq"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="Sure">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="surePress:" destination="-1" eventType="touchUpInside" id="Ddf-28-mg2"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="DOI-ZJ-nvn"/>
+                                <constraint firstItem="dtL-TU-5h5" firstAttribute="top" secondItem="XK5-nb-WPr" secondAttribute="top" constant="4" id="ZXB-rk-hwX"/>
+                                <constraint firstAttribute="trailing" secondItem="dtL-TU-5h5" secondAttribute="trailing" constant="7" id="dPz-Ij-RIq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="230" id="KGY-p4-6MF"/>
+                        <constraint firstAttribute="bottom" secondItem="iN0-rX-Xnp" secondAttribute="bottom" id="KaN-Lt-IcT"/>
+                        <constraint firstItem="XK5-nb-WPr" firstAttribute="leading" secondItem="7xL-Ln-sr5" secondAttribute="leading" id="Kao-l3-5hi"/>
+                        <constraint firstItem="iN0-rX-Xnp" firstAttribute="top" secondItem="XK5-nb-WPr" secondAttribute="bottom" id="a66-tU-dKC"/>
+                        <constraint firstAttribute="trailing" secondItem="iN0-rX-Xnp" secondAttribute="trailing" id="b6p-Cz-Uhv"/>
+                        <constraint firstItem="iN0-rX-Xnp" firstAttribute="leading" secondItem="7xL-Ln-sr5" secondAttribute="leading" id="knR-Eb-ZKw"/>
+                        <constraint firstAttribute="trailing" secondItem="XK5-nb-WPr" secondAttribute="trailing" id="l0l-pf-UO1"/>
+                        <constraint firstItem="XK5-nb-WPr" firstAttribute="top" secondItem="7xL-Ln-sr5" secondAttribute="top" id="r5P-Zd-cWt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="atT-S8-7Ow" secondAttribute="trailing" id="2Gy-Dj-iPS"/>
+                <constraint firstAttribute="bottom" secondItem="7xL-Ln-sr5" secondAttribute="bottom" id="JRr-SP-fQv"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="atT-S8-7Ow" secondAttribute="bottom" id="fa4-xh-tHG"/>
+                <constraint firstItem="7xL-Ln-sr5" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="g0m-ad-dEh"/>
+                <constraint firstItem="atT-S8-7Ow" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="qv0-Kd-QW4"/>
+                <constraint firstItem="atT-S8-7Ow" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="s9r-i5-9xU"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="7xL-Ln-sr5" secondAttribute="trailing" id="yau-tD-ili"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="134.78260869565219" y="40.848214285714285"/>
+        </view>
+    </objects>
+</document>

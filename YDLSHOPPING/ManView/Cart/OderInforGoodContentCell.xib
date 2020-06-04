@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="OderInforGoodContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0S-zO-JPm">
+                        <rect key="frame" x="12" y="0.0" width="318" height="94"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latex fabric sofaLatex fabric sofaLatex fabric sofaLatex fabric sofaLatex fabric sofa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jli-kh-CLM">
+                                <rect key="frame" x="100" y="10" width="208" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="rdU-nC-kMA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4xv-Xe-jLI">
+                                <rect key="frame" x="8" y="6" width="82" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="Dl5-4u-QUr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="size ：10″x10″" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qf-bH-sTl">
+                                <rect key="frame" x="100" y="54" width="208" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$256" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruk-yd-t9V">
+                                <rect key="frame" x="100" y="73" width="98" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="KuF-iy-HoG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDG-TJ-tf3">
+                                <rect key="frame" x="208" y="73" width="100" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="2kb-cf-AzR"/>
+                                    <constraint firstAttribute="width" constant="100" id="xrt-oR-u7t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ruk-yd-t9V" firstAttribute="leading" secondItem="4xv-Xe-jLI" secondAttribute="trailing" constant="10" id="ALD-vZ-yAW"/>
+                            <constraint firstAttribute="trailing" secondItem="Jli-kh-CLM" secondAttribute="trailing" constant="10" id="C8B-gu-RhB"/>
+                            <constraint firstItem="NDG-TJ-tf3" firstAttribute="top" secondItem="1qf-bH-sTl" secondAttribute="bottom" constant="5" id="E8P-UE-MDp"/>
+                            <constraint firstItem="4xv-Xe-jLI" firstAttribute="leading" secondItem="A0S-zO-JPm" secondAttribute="leading" constant="8" id="Mbh-QP-3BN"/>
+                            <constraint firstItem="NDG-TJ-tf3" firstAttribute="leading" secondItem="ruk-yd-t9V" secondAttribute="trailing" constant="10" id="Oqa-LA-ImV"/>
+                            <constraint firstAttribute="trailing" secondItem="1qf-bH-sTl" secondAttribute="trailing" constant="10" id="PPB-Q6-pBC"/>
+                            <constraint firstItem="Jli-kh-CLM" firstAttribute="top" secondItem="A0S-zO-JPm" secondAttribute="top" constant="10" id="UCx-L2-s3v"/>
+                            <constraint firstItem="4xv-Xe-jLI" firstAttribute="top" secondItem="A0S-zO-JPm" secondAttribute="top" constant="6" id="V2q-S9-1X9"/>
+                            <constraint firstItem="4xv-Xe-jLI" firstAttribute="centerY" secondItem="A0S-zO-JPm" secondAttribute="centerY" id="WFu-ML-5b7"/>
+                            <constraint firstAttribute="trailing" secondItem="NDG-TJ-tf3" secondAttribute="trailing" constant="10" id="c8o-zn-OYF"/>
+                            <constraint firstItem="NDG-TJ-tf3" firstAttribute="centerY" secondItem="ruk-yd-t9V" secondAttribute="centerY" id="iUQ-99-xpz"/>
+                            <constraint firstItem="1qf-bH-sTl" firstAttribute="top" secondItem="Jli-kh-CLM" secondAttribute="bottom" constant="8" id="j1U-8T-vnP"/>
+                            <constraint firstItem="1qf-bH-sTl" firstAttribute="leading" secondItem="4xv-Xe-jLI" secondAttribute="trailing" constant="10" id="lGq-33-k9l"/>
+                            <constraint firstItem="Jli-kh-CLM" firstAttribute="leading" secondItem="4xv-Xe-jLI" secondAttribute="trailing" constant="10" id="rkX-lk-GNS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="A0S-zO-JPm" secondAttribute="trailing" constant="12" id="Isp-LU-ftN"/>
+                    <constraint firstItem="A0S-zO-JPm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YVk-ol-bGH"/>
+                    <constraint firstItem="A0S-zO-JPm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="ZvY-3e-f6F"/>
+                    <constraint firstAttribute="bottom" secondItem="A0S-zO-JPm" secondAttribute="bottom" id="ebB-MV-pqG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="lzImageView" destination="4xv-Xe-jLI" id="mDU-Ed-lh4"/>
+                <outlet property="nameLabel" destination="Jli-kh-CLM" id="uqy-TS-UWa"/>
+                <outlet property="numberLabel" destination="NDG-TJ-tf3" id="gRd-pB-zYh"/>
+                <outlet property="priceLabel" destination="ruk-yd-t9V" id="hGc-Va-ThI"/>
+                <outlet property="sizeLabel" destination="1qf-bH-sTl" id="Zll-Ho-OQE"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="115.17857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

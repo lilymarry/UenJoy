@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ConbinationViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="null-picture" translatesAutoresizingMaskIntoConstraints="NO" id="Y3z-MB-0kT">
+                        <rect key="frame" x="8" y="8" width="158" height="158"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Y3z-MB-0kT" secondAttribute="height" multiplier="1:1" id="Kk7-s0-sVc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2665" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBK-zZ-WM7">
+                        <rect key="frame" x="8" y="194" width="158" height="16"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Grey sofa chair" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtG-TU-Enn">
+                        <rect key="frame" x="8" y="175" width="158" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TBK-zZ-WM7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="4YA-hq-iLm"/>
+                <constraint firstAttribute="trailing" secondItem="Y3z-MB-0kT" secondAttribute="trailing" constant="8" id="KRa-QB-cyu"/>
+                <constraint firstItem="TBK-zZ-WM7" firstAttribute="top" secondItem="KtG-TU-Enn" secondAttribute="bottom" constant="5" id="Qwg-WM-d6X"/>
+                <constraint firstAttribute="trailing" secondItem="KtG-TU-Enn" secondAttribute="trailing" constant="8" id="Sig-D6-WEJ"/>
+                <constraint firstItem="Y3z-MB-0kT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Sxc-dx-Gwh"/>
+                <constraint firstAttribute="bottom" secondItem="TBK-zZ-WM7" secondAttribute="bottom" constant="5" id="bWC-bM-HkF"/>
+                <constraint firstItem="KtG-TU-Enn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="dof-pL-xIb"/>
+                <constraint firstItem="Y3z-MB-0kT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="h8R-P5-b1C"/>
+                <constraint firstItem="KtG-TU-Enn" firstAttribute="top" secondItem="Y3z-MB-0kT" secondAttribute="bottom" constant="9" id="hpy-ff-iDa"/>
+                <constraint firstAttribute="trailing" secondItem="TBK-zZ-WM7" secondAttribute="trailing" constant="8" id="nbX-cL-wN8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="174" height="215"/>
+            <point key="canvasLocation" x="221.73913043478262" y="189.84375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="null-picture" width="64" height="64"/>
+    </resources>
+</document>

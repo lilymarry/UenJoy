@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoriesDetailController">
+            <connections>
+                <outlet property="filterBtn" destination="RIM-fX-ipn" id="bWM-kH-4bB"/>
+                <outlet property="mCollect" destination="dB0-H3-Hsf" id="LYE-I2-8lH"/>
+                <outlet property="priceBtn" destination="FS8-xp-q9f" id="zxg-zf-ZlR"/>
+                <outlet property="titleView" destination="sa9-K0-xh8" id="cE7-GF-Tt4"/>
+                <outlet property="titleViewHHH" destination="jqf-lQ-OOs" id="8YO-Vg-S7H"/>
+                <outlet property="topHH" destination="PSN-Vw-m9Y" id="4Dm-fL-iPC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sa9-K0-xh8">
+                    <rect key="frame" x="0.0" y="64" width="320" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jqf-lQ-OOs"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaP-Xd-3p3">
+                    <rect key="frame" x="0.0" y="104" width="320" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Lxe-rg-Zkn"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvW-3e-YIM" userLabel="View1">
+                    <rect key="frame" x="0.0" y="106" width="320" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FS8-xp-q9f">
+                            <rect key="frame" x="8" y="5" width="149.5" height="30"/>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Price" image="价格排序上黄">
+                                <color key="titleColor" red="0.96470588235294119" green="0.66666666666666663" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" title="Price" image="价格排序下黄"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds " value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="pricePress:" destination="-1" eventType="touchUpInside" id="WD9-II-cei"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIM-fX-ipn">
+                            <rect key="frame" x="162.5" y="5" width="149.5" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title=" Filter" image="筛选">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="attributePress:" destination="-1" eventType="touchUpInside" id="sXO-z9-DdV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RIM-fX-ipn" firstAttribute="leading" secondItem="FS8-xp-q9f" secondAttribute="trailing" constant="5" id="01N-Be-Ki4"/>
+                        <constraint firstItem="RIM-fX-ipn" firstAttribute="centerY" secondItem="yvW-3e-YIM" secondAttribute="centerY" id="31q-DW-DK1"/>
+                        <constraint firstItem="RIM-fX-ipn" firstAttribute="top" secondItem="yvW-3e-YIM" secondAttribute="top" constant="5" id="4fx-AX-SAA"/>
+                        <constraint firstItem="FS8-xp-q9f" firstAttribute="leading" secondItem="yvW-3e-YIM" secondAttribute="leading" constant="8" id="Kgq-RR-DI8"/>
+                        <constraint firstAttribute="height" constant="40" id="R4B-Fi-2y3"/>
+                        <constraint firstItem="FS8-xp-q9f" firstAttribute="centerY" secondItem="yvW-3e-YIM" secondAttribute="centerY" id="S1W-bb-x14"/>
+                        <constraint firstItem="RIM-fX-ipn" firstAttribute="height" secondItem="FS8-xp-q9f" secondAttribute="height" id="Vvh-uK-lKc"/>
+                        <constraint firstAttribute="trailing" secondItem="RIM-fX-ipn" secondAttribute="trailing" constant="8" id="YWm-Gl-NOW"/>
+                        <constraint firstItem="RIM-fX-ipn" firstAttribute="width" secondItem="FS8-xp-q9f" secondAttribute="width" id="gtk-ri-bVM"/>
+                        <constraint firstItem="FS8-xp-q9f" firstAttribute="top" secondItem="yvW-3e-YIM" secondAttribute="top" constant="5" id="hmA-hG-HaU"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dB0-H3-Hsf">
+                    <rect key="frame" x="0.0" y="151" width="320" height="417"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZrX-zj-co4">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="p9y-jE-s2l"/>
+                        <outlet property="delegate" destination="-1" id="hew-4c-lpM"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHW-rE-hLt">
+                    <rect key="frame" x="0.0" y="147" width="320" height="5"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="dxY-fd-7Ej"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xaP-Xd-3p3" secondAttribute="trailing" id="Bab-AT-hTX"/>
+                <constraint firstItem="xaP-Xd-3p3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Dnf-sH-o69"/>
+                <constraint firstItem="xaP-Xd-3p3" firstAttribute="top" secondItem="sa9-K0-xh8" secondAttribute="bottom" id="FIr-KK-OgO"/>
+                <constraint firstItem="yvW-3e-YIM" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="JLK-jp-okD"/>
+                <constraint firstItem="sa9-K0-xh8" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Ko7-NE-2hM"/>
+                <constraint firstItem="dB0-H3-Hsf" firstAttribute="top" secondItem="yvW-3e-YIM" secondAttribute="bottom" constant="5" id="OdE-pG-t4r"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="dB0-H3-Hsf" secondAttribute="bottom" id="P0B-mu-WwA"/>
+                <constraint firstItem="sa9-K0-xh8" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="PEF-uW-BgK"/>
+                <constraint firstItem="sa9-K0-xh8" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="64" id="PSN-Vw-m9Y"/>
+                <constraint firstItem="dB0-H3-Hsf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="SGT-mt-OxG"/>
+                <constraint firstItem="yvW-3e-YIM" firstAttribute="top" secondItem="sa9-K0-xh8" secondAttribute="bottom" constant="2" id="UKp-6r-Coj"/>
+                <constraint firstItem="sHW-rE-hLt" firstAttribute="top" secondItem="yvW-3e-YIM" secondAttribute="bottom" constant="1" id="a6d-tB-qSg"/>
+                <constraint firstItem="sHW-rE-hLt" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="cTL-Wu-Buf"/>
+                <constraint firstItem="yvW-3e-YIM" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="dWd-y1-nfQ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="dB0-H3-Hsf" secondAttribute="trailing" id="ja5-u1-pSw"/>
+                <constraint firstItem="sHW-rE-hLt" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="wQc-5r-gMJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="36" y="34.632683658170919"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="价格排序上黄" width="7" height="9.5"/>
+        <image name="价格排序下黄" width="7" height="9.5"/>
+        <image name="筛选" width="15" height="16"/>
+    </resources>
+</document>
